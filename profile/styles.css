@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+*{
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+
+body{
+	background: #bbb2e9;
+}
+
+.wrapper{
+	position: relative;
+	width: 325px;
+	margin: 150px auto 0;
+}
+
+.profile_card{
+	width: 325px;
+	height: 450px;
+	background: #bbb2e9;
+	padding: 50px 25px;
+	position: relative;
+	z-index: 1;
+}
+
+.profile_card{
+	color: #fff;
+	text-align: center;
+}
+
+.profile_card .profile_img img{
+	width: 80px;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
+}
+
+.profile_card .profile_img .name{
+	font-size: 24px;
+	font-weight: 500;
+	margin: 15px 0 5px;
+}
+
+.profile_card .profile_img .place{
+	font-size: 14px;
+	font-weight: 300;
+}
+
+.profile_card .place .icon{
+	margin-right: 10px;
+}
+
+.profile_icons{
+	display: flex;
+	margin: 30px 0;
+	justify-content: center;
+}
+
+.profile_icons .profile_item{
+	margin-right: 15px;
+}
+
+.profile_icons .profile_item:last-child{
+	margin-right: 0;
+}
+
+.profile_icons .icon,
+.profile_icons .number{
+	font-size: 24px;
+}
+
+.profile_icons .title{
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 10px 0;
+}
+
+.profile_btn{
+	background: #ebc654;
+	padding: 10px;
+	border-radius: 25px;
+	width: 200px;
+	margin: 0 auto;
+	color: #8d731e;
+	cursor: pointer;
+}
+
+.profile_btn:hover{
+	background: #ffc208;
+}
+
+.back_btn, 
+.settings_btn{
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.back_btn{
+	left: 0;
+	box-shadow: inset -2px -2px 3px #6a60c3;
+}
+
+.settings_btn{
+	right: 0;
+	box-shadow: inset 2px -2px 3px #6a60c3;
+}
+
+.back_btn:hover, 
+.settings_btn:hover{
+	background: #6a60c3;
+}
+
+.profile_slider{
+	width: 325px;
+	height: 400px;
+	background: #fff;
+	color: #7b7a82;
+	position: absolute;
+	top: 25px;
+	left: 0;
+	font-size: 14px;
+	transition: left 0.2s ease;
+}
+
+.profile_slider li{
+	height: 80px;
+	border-bottom: 1px solid #eceff4;
+	padding: 15px;
+}
+
+.profile_slider li:last-child{
+	border-bottom: 0;
+}
+
+.profile_slider li .slider_item,
+.profile_slider li .slider_left{
+	display: flex;
+}
+
+.profile_slider li .slider_item{
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+}
+
+.profile_slider img{
+	width: 35px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+
+.profile_slider .item{
+	text-align: left;
+	font-size: 12px;
+}
+
+.profile_slider .item_email{
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+.profile_slider .btn{
+	width: 100px;
+	padding: 8px 10px;
+	border-radius: 25px;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+}
+
+.profile_slider .btn.btn_following{
+	background: #6a60c3;
+	color: #fff;
+}
+
+.profile_slider .btn.btn_following:hover{
+	background: #8178d1;
+}
+
+.profile_slider .btn.btn_follow{
+	border: 1px solid #7b7a82;
+}
+
+.profile_slider .btn.btn_follow:hover{
+	color: #fff;
+	background: #7b7a82;
+}
+
+.profile_slider.active{
+	left: 100%;
+}
+
+.settings_btn.active{
+	background: #6a60c3;
+}
+
+.settings_btn i{
+	transition: transform 0.2s ease;
+}
+
+.settings_btn.active i{
+	transform: rotate(360deg);
+}
+.wrapper2 {
+	position: fixed;
+	bottom: 10px;
+	left:10px; 
+	width: 550px;
+  }
+  /* Style the Un-order list by setting its list-style to none */
+.wrapper2 ul {
+	list-style: none;
+  }
+  
+  /* Style the list items inside the UL list, by setting its width, height and line-height 
+	and float them to left and set its border and border-radius.
+   */
+  .wrapper2 ul li {
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	margin: 0 10px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 50%;
+	border: 5px solid #D8E2DC;
+	float: left;
+	transition: all 0.5s ease;
+  }
+  
+  /* Style the icons by setting its color and margin-top value to 20px 
+  to align it properly */
+  .wrapper2 ul li .fa {
+	color: #D8E2DC;
+	margin-top: 20px;
+	transition: all 0.5s ease;
+  }
+  
+  /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+	to icons for glowing effect and use transition property for smooth transition effect. */
+  /*facebook*/
+  .wrapper2 ul li:hover.facebook {
+	border: 5px solid #3b5998;
+	box-shadow: 0 0 15px #3b5998;
+	transition: all 0.5s ease;
+  }
+  
+  .wrapper2 ul li:hover .fa-facebook {
+	color: #3b5998;
+	text-shadow: 0 0 15px #3b5998;
+	transition: all 0.5s ease;
+  }
+  
+  /*twitter*/
+  .wrapper2 ul li:hover.twitter {
+	border: 5px solid #00aced;
+	box-shadow: 0 0 15px #00aced;
+	transition: all 0.5s ease;
+  }
+  
+  .wrapper2 ul li:hover .fa-twitter {
+	color: #00aced;
+	text-shadow: 0 0 15px #00aced;
+	transition: all 0.5s ease;
+  }
+  
+  /* instagram */
+  .wrapper2 ul li:hover.instagram {
+	border: 5px solid #bc2a8d;
+	box-shadow: 0 0 15px #bc2a8d;
+	transition: all 0.5s ease;
+  }
+  
+  .wrapper2 ul li:hover .fa-instagram {
+	color: #bc2a8d;
+	text-shadow: 0 0 15px #bc2a8d;
+	transition: all 0.5s ease;
+  }
+  
+  /* google */
+  .wrapper2 ul li:hover.google {
+	border: 5px solid #dd4b39;
+	box-shadow: 0 0 15px #dd4b39;
+	transition: all 0.5s ease;
+  }
+  
+  .wrapper2 ul li:hover .fa-google {
+	color: #dd4b39;
+	text-shadow: 0 0 15px #dd4b39;
+	transition: all 0.5s ease;
+  }
+  
+  /* whatsapp */
+  .wrapper2 ul li:hover.whatsapp {
+	border: 5px solid #4dc247;
+	box-shadow: 0 0 15px #4dc247;
+	transition: all 0.5s ease;
+  }
+  
+  .wrapper2 ul li:hover .fa-whatsapp {
+	color: #4dc247;
+	text-shadow: 0 0 15px #4dc247;
+	transition: all 0.5s ease;
+  }
+  
+  
+  /* media queries */
+  
+  @media screen and (max-width: 640px){
+	.wrapper2 {
+		width: 350px;
+	}
+	.wrapper2 ul li{
+		margin-top: 10px;
+	}
+	.wrapper2 ul li.google{
+		margin-left: 60px;
+	}
+  }
+  
+  
+  @media screen and (max-width: 340px){
+	.wrapper2 {
+		width: 150px;
+	}
+	.wrapper2 ul li{
+		margin:15px;
+	}
+	.wrapper2 ul li.google{
+		margin-left: 15px;
+	}
+  }
+  

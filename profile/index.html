@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Profile Card Design</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+	<div class="profile_card">
+		<div class="back_btn">
+			<i class="fas fa-long-arrow-alt-left"></i>
+		</div>
+		<div class="settings_btn">
+			<i class="fas fa-cog"></i>
+		</div>
+	
+		<div class="profile_wrap">
+			<div class="profile_img">
+				<img src="leonardo.jpg" alt="profile_pic">
+				<p class="name">UserName</p>
+				<p class="place">
+					<span class="icon">
+						<i class="fas fa-map-pin"></i>
+					</span>
+					<span class="place_name">Place as on PAN CARD</span>
+				</p>
+			</div>
+
+			<div class="profile_icons">
+				<div class="profile_item">
+					<div class="icon"><i class="fas fa-user"></i></div>
+					<div class="title">Transactions</div>
+					<div class="num">23</div>
+				</div>
+				<div class="profile_item">
+					<div class="icon"><i class="fas fa-users"></i></div>
+					<div class="title">PAN</div>
+					<div class="num">XXXX </div>
+				</div>
+				<div class="profile_item">
+					<div class="icon"><i class="fas fa-calendar-alt"></i></div>
+					<div class="title">Joined Year</div>
+					<div class="num">2022</div>
+				</div>
+			</div>
+
+			<div class="profile_btn">
+				Start Following
+			</div>
+		</div>
+	</div>
+	<div class="profile_slider">
+			<ul>
+				<li>
+					<div class="slider_item">
+						<div class="slider_left">
+							<div class="img">
+								<img src="elephants.jpg" alt="">
+							</div>
+							<div class="item">
+								<div class="item_name">
+									Elephant Crisis Fund
+								</div>
+								<div class="item_email">
+									@ElephantCrisis
+								</div>
+							</div>
+						</div>
+						<div class="slider_right">
+							<div class="btn btn_following">Following</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider_item">
+						<div class="slider_left">
+							<div class="img">
+								<img src="tomhanks.jpg" alt="">
+							</div>
+							<div class="item">
+								<div class="item_name">
+									Tom Hanks
+								</div>
+								<div class="item_email">
+									@tomhanks
+								</div>
+							</div>
+						</div>
+						<div class="slider_right">
+							<div class="btn btn_follow">Follow</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider_item">
+						<div class="slider_left">
+							<div class="img">
+								<img src="Therevenant.jpg" alt="">
+							</div>
+							<div class="item">
+								<div class="item_name">
+									TheRevenant
+								</div>
+								<div class="item_email">
+									@RevenantMovie
+								</div>
+							</div>
+						</div>
+						<div class="slider_right">
+							<div class="btn btn_following">Following</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider_item">
+						<div class="slider_left">
+							<div class="img">
+								<img src="obama.jpg" alt="">
+							</div>
+							<div class="item">
+								<div class="item_name">
+									Barack Obama
+								</div>
+								<div class="item_email">
+									@BarackObama
+								</div>
+							</div>
+						</div>
+						<div class="slider_right">
+							<div class="btn btn_follow">Follow</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="slider_item">
+						<div class="slider_left">
+							<div class="img">
+								<img src="greta.jpg" alt="">
+							</div>
+							<div class="item">
+								<div class="item_name">
+									Greta Thunberg
+								</div>
+								<div class="item_email">
+									@GretaThunberg
+								</div>
+							</div>
+						</div>
+						<div class="slider_right">
+							<div class="btn btn_following">Following</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+	</div>
+</div>
+	
+<script>
+	var settings_btn = document.querySelector(".settings_btn");
+	var profile_slider = document.querySelector(".profile_slider");
+
+	settings_btn.addEventListener("click", function(){
+		profile_slider.classList.toggle("active");
+		this.classList.toggle("active");
+	})
+</script>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+<div class="wrapper2">
+  <ul>
+    <li class="facebook"><a href="#"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+    <li class="twitter"><a href="#"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+    <li class="instagram"><a href="#"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+    <li class="google"><a href="#"><i class="fa fa-google fa-2x" aria-hidden="true"></i></a></li>
+    <li class="whatsapp"><a href="#"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+  </ul>
+</div>
+</body>
+</html>
